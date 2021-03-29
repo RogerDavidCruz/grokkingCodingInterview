@@ -28,7 +28,7 @@ calculate the minLength based on minlength so far and the current size of window
 continue to slide window by removing first element, and moving start
 return the minLength or 0 if runningsum was never greater than or equal to S
 
-Time: O(n)
+Time: O(n) two loops O(n + n) but asymptotically O(n)
 Space: O(1)
 */
 
