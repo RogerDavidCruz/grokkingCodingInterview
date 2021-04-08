@@ -16,6 +16,16 @@ Example 2: Level Order: [[12], [17,1], [9,10,5]]
 
 Time: O(n)
 Space: O(n)
+
+Pseudo Code Steps
+    1. push root node to queue
+    2. iterate until queue empty
+    3. each iteration, find levelsize by counting elements in queue
+    4. remove levelsize amount of nodes in queue and push their value in array to represent current level
+    5. after remove each node from queue, insert both children nodes into queue
+    6. if queue not empty, repeat from step 3 for each level
+
+BFS uses Queue -> Iterative -> Traverse
 */
 
 function traverse (root) {
@@ -31,7 +41,7 @@ function traverse (root) {
   
         //i repeats from zero because of the while starts another iteration with i back to 0
         for (let i = 0; i < levelSize; i++) {
-            const currentNode = queue.shift(); // node at the first of queue (node tree object)
+            currentNode = queue.shift(); // node at the first of queue is removed (node tree object)
             currentLevel.push(currentNode.value); //push value of current node from sub-tree node push into queue
 
             if (currentNode.left !== null) {  //if object on L side not empty, push left sub-tree into queue
