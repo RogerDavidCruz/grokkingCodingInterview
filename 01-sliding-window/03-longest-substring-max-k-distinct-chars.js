@@ -52,14 +52,14 @@ const longestSubstringWithKDistinct = (str, k) => {
     for (end = 0; end < str.length; end++) {
         const rightChar = str[end]
         if (!(rightChar in freqMap)) {
-            freqMap[rightChar] = 1
+            freqMap[rightChar] = 1 
         } else {
             freqMap[rightChar] += 1
         }
 
         while (Object.keys(freqMap).length > k) { //this
             const leftChar = str[start];
-            freqMap[leftChar] -= 1
+            freqMap[leftChar] -= 1; // as window slided you decrease char frequency
             if (freqMap[leftChar] === 0)  {
                 delete freqMap[leftChar]
             }
