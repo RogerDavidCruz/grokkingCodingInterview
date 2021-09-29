@@ -36,7 +36,7 @@ const maxSumSizeK = (arr, k) => {
     for (end = 0; end < arr.length; end++) {
         sum += arr[end];
 
-        if (end >= k - 1) {
+        if (end >= k - 1) { //end + 1 >= k
             maxSum = Math.max(maxSum, sum);
             sum -= arr[start];
             start++
