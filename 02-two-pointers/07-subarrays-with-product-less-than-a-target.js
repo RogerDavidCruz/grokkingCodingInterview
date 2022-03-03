@@ -61,17 +61,65 @@ space: O(N^3) at most O(n^2) space for output list and each subarray can take O(
 
 /*
 two pointers approach
+    -the order of subarrays comes out different but same answer
 
- i
-[1,2,3,4], 10
-   j
+Example:
+    Input:
+        [2,5,3,10], target = 30
+    Output:
+        [ [ 2 ], [ 2, 5 ], [ 5 ], [ 5, 3 ], [ 3 ], [ 10 ] ]
+        [ [ 8 ], [ 8, 2 ], [ 2 ], [ 2, 6 ], [ 6 ], [ 6, 5 ], [ 5 ] ]
 
+        i
+   [2,5,3,10], target = 30
+        j
+
+1st for loop at i = 0      
+product = 2
+is product < target
+    2 < 30, yes
+res = [[2]]push into res
+
+2nd for loop at j = 1
+product = product * arr[j]
+product = 2 * 5 = 10
+is product < target, 10 < 30, yes
+res = [[2], [2,5]] push into res
+
+1st for loop at i = 1
+product = 5
+is product < target, 5 < 30, yes
+res = [[2], [2,5], [5]] push into res
+
+2nd for loop at j = 2
+product = 5 * 3 = 15
+is product < target, 15 < 30, yes
+res = [[2], [2,5], [5], [[5,3]]] push into res
+
+1st for loop at i = 2
+product = 3
+is product < target, 3 < 30, yes
+res = [[2], [2,5], [5], [[5,3]], [3]]push into res
+
+2nd for loop at j = 3
+product = 3 * 10 = 30
+is product < target, 30 < 30, no
+don't push anything
+
+1st loop with i = 3
+product = 10
+is product < target, 10 < 30, yes
+res = [[2], [2,5], [5], [[5,3]], [3], [10]] push into res
+
+          i
+   [2,5,3,10], target = 30
+           j
 */
 
 const findSubarrays = (arr, target) => {
     let res = [];
     for (let i = 0; i < arr.length; i++) {
-        let product = arr[i]     //why? //accounting for subarr of 1 length
+        let product = arr[i]     //why? to track what to multiply to get product
         if (product < target) {
             res.push([product]);    
         } else {
@@ -80,9 +128,15 @@ const findSubarrays = (arr, target) => {
         for (let j = i + 1; j < arr.length; j++) {
             product *= arr[j];
             if (product < target) {
-                res.push([arr[i], arr[j]]) //why? push into result array the subset
+                res.push([arr[i], arr[j]]) //why? push into result array the subset - to get whole subset
             }
         }
     }
     return res
 }
+
+/*
+[ [ 2 ], [ 5 ], [ 2, 5 ], [ 3 ], [ 5, 3 ], [ 10 ] ]
+[ [ 8 ], [ 2 ], [ 8, 2 ], [ 6 ], [ 2, 6 ], [ 5 ], [ 6, 5 ] ]
+
+*/
