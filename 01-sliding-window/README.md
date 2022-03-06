@@ -13,56 +13,43 @@
 9. [String Anagrams (hard)](#string-anagrams-hard)
 
 
-### Maximum Sum Subarray of Size K (easy)
+## Maximum Sum Subarray of Size K (easy)
 
-> **Problem Statement**:
-Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
+> Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
+
+```
 Example 1:
     Input: [2, 1, 5, 1, 3, 2], k=3
     Output: 9
-    Explanation: Subarray with maximum sum is [5, 1, 3].
+    Explanation: Subarray with maximum sum is [5, 1, 3]
+
 Example 2:
     Input: [2, 3, 4, 1, 5], k=2
     Output: 7
-    Explanation: Subarray with maximum sum is [3, 4].
+    Explanation: Subarray with maximum sum is [3, 4]
+```    
+
+>### **Time Complexity: O(N)**
+>### **Space Complexity: O(1)**
 
 ```javascript
-const max_sub_array_of_size_k = function (k, arr) {
-  // Input: an array of numbers and k (subarray size limit)
-  // Output: max sum (number)
+const maxSumSizeK = (arr, k) => {
+    let start = 0,
+        maxSum = 0,
+        sum = 0;
 
-  // Needs: windowStart, sum, maxSum
+    for (end = 0; end < arr.length; end++) {
+        sum += arr[end];
 
-  let windowStart = 0;
-  let sum = 0;
-  let maxSum = 0;
-
-  // Loop through array
-  for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-    // add numbers to sum
-    let rightChar = arr[windowEnd];
-    sum += rightChar;
-
-    // Slide the window if window gets bigger than or equal to the k limit
-    if (windowEnd - windowStart + 1 >= k) {
-      // Update maxSum
-      maxSum = Math.max(maxSum, sum);
-
-      // Remove traces of windowStart as you slide the window forward
-      let leftChar = arr[windowStart];
-      windowStart++;
-      sum -= leftChar;
+        if (end + 1 >= k) { // or end >= k - 1
+            maxSum = Math.max(maxSum, sum);
+            sum -= arr[start];
+            start++
+        }
     }
-  }
-
-  return maxSum;
-};
+    return maxSum;
+}
 ```
-
-### Time Complexity: O(N)
-
-### Space Complexity: O(1)
-
 ---
 
 ## Smallest Subarray With Given Sum (easy)
