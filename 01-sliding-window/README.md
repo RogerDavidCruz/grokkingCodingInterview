@@ -29,9 +29,6 @@ Example 2:
     Explanation: Subarray with maximum sum is [3, 4]
 ```    
 
->### **Time Complexity: O(N)**
->### **Space Complexity: O(1)**
-
 ```javascript
 const maxSumSizeK = (arr, k) => {
     let start = 0,
@@ -50,6 +47,8 @@ const maxSumSizeK = (arr, k) => {
     return maxSum;
 }
 ```
+>### **Time Complexity: O(N)**
+>### **Space Complexity: O(1)**
 ---
 
 ## Smallest Subarray With Given Sum (easy)
