@@ -15,7 +15,7 @@
 
 ## Maximum Sum Subarray of Size K (easy)
 
-> Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
+Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
 
 ```
 Example 1:
@@ -48,7 +48,8 @@ const maxSumSizeK = (arr, k) => {
 }
 ```
 >### **Time Complexity: O(N)**
->### **Space Complexity: O(1)**
+### **Space Complexity: O(1)**
+
 ---
 
 ## Smallest Subarray With Given Sum (easy)
