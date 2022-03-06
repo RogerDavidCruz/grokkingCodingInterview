@@ -22,7 +22,6 @@ function max_sub_array_of_size_k(k, arr) {
 ### Maximum Sum Subarray of Size K
 
 ```
-Problem Statement #
 Given an array of positive numbers and a positive number ‘k’,
 find the maximum sum of any contiguous subarray of size ‘k’.
 
@@ -58,14 +57,13 @@ function max_sub_array_of_size_k(k, arr) {
   return maxSum;
 }
 
-console.log(max_sub_array_of_size_k(3, [2, 1, 5, 1, 3, 2]));
-console.log(max_sub_array_of_size_k(2, [2, 3, 4, 1, 5]));
+console.log(max_sub_array_of_size_k(3, [2, 1, 5, 1, 3, 2])); // 9
+console.log(max_sub_array_of_size_k(2, [2, 3, 4, 1, 5])); // 7
 ```
 
 ### Smallest Subarray Greater 
 
 ```
-/*
 Given an array of positive numbers and a positive number 'S,' find the length of the
 smallest contigous subarray whose sum is greater than or equal to 'S'. Return 0 if no 
 such subarray exists.
@@ -193,6 +191,9 @@ Example 2:
     Input: String="abbbb"
     Output: 2
     Explanation: The longest substring with distinct characters is "ab".
+
+Time: O(N)
+Space: O(1) since there is a set 26 distinct english letters to fit in the hashmap
 ```
 
 ```javascript
@@ -246,7 +247,6 @@ Space: O(1)
 ```
 
 ```javascript
-  
 const pairTargetSum = (nums, target) => {
     let left = 0,
         right = nums.length - 1;
@@ -267,4 +267,164 @@ const pairTargetSum = (nums, target) => {
 
 console.log(pairTargetSum([1,2,3,4,6], 6)) //[1,3]
 console.log(pairTargetSum([2,5,9,11], 11)) //[0,2]
+```
+
+# Pattern: Fast and Slow Pointers
+
+```
+Linked List created using a Node class and an instance of this class with sub objects.
+```
+
+```javascript
+class Node{
+    constructor(value, next = null){
+        this.value = value;
+        this.next = next;
+    }
+}
+
+const head = new Node(1);
+head.next = new Node(2);
+head.next.next = new Node(3);
+head.next.next.next = new Node(4);
+head.next.next.next.next = new Node(5);
+head.next.next.next.next.next = new Node(6);
+```
+
+### Linked List Cycle
+
+```
+Give the head of a singly linked list, write a function to determine if the 
+LinkedList has a cycle in it or not.
+
+Example 1:  LinkedList with cycle
+            head -> 1 - 2 - 3 - 4 - 5 - 6 --|
+                        ^|__________________|
+
+Example 2:  LinkedList without cycle
+            head - 2 - 4 - 6 - 8 - 10 - null
+
+Time: O(N) all nodes of LL
+Space: O(1)
+```
+
+```javascript
+const hasCycle = head => {
+    let slow = head,
+        fast = head;
+
+    while (fast !== null && fast.next !== null) {
+        fast = fast.next.next;
+        slow = slow.next;
+
+        if (slow === fast) {
+            return true; // found the cycle
+        }
+    }
+    return false;
+}
+```
+
+### Start of Linked List Cycle
+
+```
+Given the head of a singly linkedlist that contains a cycle, write a function
+to find the starting node of a the cycle.
+
+                    cycle start
+Example 1:               v
+            head -> 2 -> 3 -> 4 -> 5 -> 6--|
+                         ^|________________|
+
+                         cycle start
+Example 2:                    v
+            head -> 2 -> 3 -> 4 -> 5 -> 6--|
+                              ^|___________|
+
+               cycle start
+Example 3:          v
+            head -> 2 -> 3 -> 4 -> 5 -> 6--|
+                    ^|_____________________|
+```
+
+```javascript
+const findCycleStart = head => {
+    let slow = head,
+        fast = head;
+    
+    while (fast !== null && fast.next !== null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow === fast) {
+            slow = head;
+            while (slow !== fast) {
+                slow = slow.next;
+                fast = fast.next;
+            }
+            return slow;
+        }
+    }
+    return null;
+}
+```
+
+# Pattern: Merge Intervals
+
+```
+```
+
+### Merge Intervals
+
+```
+Given a list of intervals, merge all the overlapping intervals to product
+a list that has only mutually exclusive intervals.
+
+Example 1:
+    Intervals: [[1,4], [2,5], [7,9]]
+    Output: [[1,5], [7,9]]
+    Explanation: Since the first two intervals [1,4] and [2,5] overlap, 
+                 we merged them into one [1,5].
+
+Example 2:
+    Intervals: [[6,7], [2,4], [5,9]]
+    Output: [[2,4], [5,9]]
+    Explanation: Since the intervals [6,7] and [5,9] overlap, 
+                 we merged them into one [5,9].
+
+Time: O(N * logN)
+Space: O(N)
+```
+
+```javascript
+const mergeIntervals = intervals => {
+    if (intervals.length < 2) return intervals;
+  
+    intervals.sort((a,b) => a[0] - b[0]);
+  
+    let fullYMerged = [];
+  
+  // start arr[0].start
+  // end arr[0].end
+  
+    for (let i = 1; i < intervals.length; i++) {
+      let interval = intervals[i];
+  
+      // b.start < a.end
+        //merge
+      if (interval[0] <= end) { // interval.start <= end {
+        // end = Math.max(end, end)
+        end = Math.max(interval[1], end);
+      } else {
+        fullYMerged.push(start, end)
+        start = interval[0]
+        end = interval[1]
+      }
+      
+    }
+    fullyMerged.push(start, end)
+    return fullyMerged
+    
+  }
+  
+  console.log(mergeIntervals([[1,4], [2,5], [7,9]])) //[[1,5], [7,9]]
 ```
