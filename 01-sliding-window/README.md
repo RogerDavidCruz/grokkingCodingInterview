@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Maximum Sum Subarray of Size K (easy)](#maximum-sum-subarray-of-size-k-easy)
-2. [Smallest Subarray With Given Sum (easy)](#smallest-subarray-with-given-sum-easy)
+2. [Smallest Subarray With Greater Sum (easy)](#smallest-subarray-with-greater-sum-easy)
 3. [Longest Substring with K Distinct Characters (medium)](#longest-substring-with-k-distinct-characters-medium)
 4. [Fruits into Baskets (medium)](#fruits-into-baskets-medium)
 5. [No-repeat Substring (hard)](#no-repeat-substring-hard)
@@ -15,7 +15,7 @@
 
 ## Maximum Sum Subarray of Size K (easy)
 
-Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
+>Given an array of positive numbers and a positive number ‘k’, find the **maximum sum** of any **contiguous subarray of size ‘k’**.
 
 ```
 Example 1:
@@ -47,9 +47,52 @@ const maxSumSizeK = (arr, k) => {
     return maxSum;
 }
 ```
->#### **Time Complexity: O(N)**
->#### **Space Complexity: O(1)**
+>### **Time Complexity: O(N)**
+>### **Space Complexity: O(1)**
 
 ---
 
-## Smallest Subarray With Given Sum (easy)
+## Smallest Subarray with a Greater Sum (easy)
+
+>Given an array of positive numbers and a positive number 'S,' find the length of the
+smallest contigous subarray whose sum is greater than or equal to 'S'. Return 0 if no 
+such subarray exists.
+
+```
+Example 1:
+    Input: [2, 1, 5, 2, 3, 2], S = 7
+    Output: 2
+    Explanation: The smallest subarray with a sum greater than or equal to '7' is [5, 2]
+
+Example 2:
+    Input: [2, 1, 5, 2, 8], S=7 
+    Output: 1
+    Explanation: The smallest subarray with a sum greater than or equal to '7' is [8].
+```
+
+```javascript
+const smallestLenSum = (arr, s) => {
+    let start = 0, sum = 0, minLen = Infinity;
+
+    for (end = 0; end < arr.length; end++) {
+        sum += arr[end];
+
+        while (sum >= s) {
+            minLen = Math.min(minLen, end - start + 1);
+            sum -= arr[start];
+            start++
+        }
+    }
+    return minLen === Infinity ? 0 : minLen;
+}
+
+console.log(smallestLenSum([2,1,5,2,3,2], 7)) //2
+console.log(smallestLenSum([2,1,5,2,8], 7)) //1
+console.log(smallestLenSum([3,4,1,1,6], 8)) //3
+```
+> ### **Time: O(N)** two loops O(n + n) but asymptotically O(n)
+> ### **Space: O(1)**
+
+---
+
+## Longest Substring with K Distinct Characters (medium)
