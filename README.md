@@ -4,19 +4,19 @@ https://www.educative.io/courses/grokking-the-coding-interview
 
 ### Pattern: Sliding Window (11)
 
-| Number |                        Done                       | Problem                                                      |                                          Leetcode                                          | Written 10x |
-|:------:|:-------------------------------------------------:|--------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:-----------:|
-|    1   | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul> | Maximum Sum Subarray of Size K (easy)                        |                                             n/a                                            |      X      |
-|    2   |                                                   | Smallest Subarray with a given sum (easy)                    |               [209](https://leetcode.com/problems/minimum-size-subarray-sum/)              |      X      |
-|    3   |                                                   | Longest Substring with K Distinct Characters (medium)        | [340](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |      X      |
-|    4   |                                                   | Fruits into Baskets (medium)                                 |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
-|    5   |                                                   | No-repeat Substring (hard)                                   |                                              3                                             |             |
-|    6   |                                                   | Longest Substring with Same Letters after Replacement (hard) |                                             424                                            |             |
-|    7   |                                                   | Longest Subarray with Ones after Replacement (hard)          |                                            1004                                            |             |
-|    8   |                                                   | PC 1 - Permutation of a string                               |                                             567                                            |             |
-|    9   |                                                   | PC 2 - String Anagrams (hard)                                |                                             438                                            |             |
-|   10   |                                                   | PC 3 - Smallest Window containing Substring (hard)           |                                             76                                             |             |
-|   11   |                                                   | PC 4 - Substring w/concatenation                             |                                             30                                             |             |
+| Number |           Done           | Problem                                                      |                                          Leetcode                                          | Written 10x |
+|:------:|:------------------------:|--------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:-----------:|
+|    1   | <ul><li>- [x] </li></ul> | Maximum Sum Subarray of Size K (easy)                        |                                             n/a                                            |      X      |
+|    2   | <ul><li>- [x] </li></ul> | Smallest Subarray with a given sum (easy)                    |               [209](https://leetcode.com/problems/minimum-size-subarray-sum/)              |      X      |
+|    3   | <ul><li>- [x] </li></ul> | Longest Substring with K Distinct Characters (medium)        | [340](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |      X      |
+|    4   | <ul><li>- [ ] </li></ul> | Fruits into Baskets (medium)                                 |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
+|    5   |      <li>- [x] </li>     | No-repeat Substring (hard)                                   |                                              3                                             |             |
+|    6   |      <li>- [ ] </li>     | Longest Substring with Same Letters after Replacement (hard) |                                             424                                            |             |
+|    7   |      <li>- [x]</li>      | Longest Subarray with Ones after Replacement (hard)          |                                            1004                                            |             |
+|    8   |      <li>- [ ]</li>      | PC 1 - Permutation of a string                               |                                             567                                            |             |
+|    9   |                          | PC 2 - String Anagrams (hard)                                |                                             438                                            |             |
+|   10   |                          | PC 3 - Smallest Window containing Substring (hard)           |                                             76                                             |             |
+|   11   |                          | PC 4 - Substring w/concatenation                             |                                             30                                             |             |
 
 
 - [x] Maximum Sum Subarray of Size K (easy): new (​link​)
