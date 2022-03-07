@@ -18,23 +18,27 @@ https://www.educative.io/courses/grokking-the-coding-interview
 |   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)            |                [76](https://leetcode.com/problems/minimum-window-substring/)               |             |
 |   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring with concatenation                           |       [30](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)       |             |
 
+---
+
 ## Pattern: Two Pointers (11)
 
-| Number |           Done           | Problem                                            | Leetcode | Written 10x |
-|:------:|:------------------------:|----------------------------------------------------|:--------:|:-----------:|
-|    1   | <ul><li>- [x] </li></ul> | Pair with Target Sum (easy)                        |        1 |      X      |
-|    2   | <ul><li>- [x] </li></ul> | Remove Duplicates (easy)                           |       26 |      X      |
-|    3   | <ul><li>- [x] </li></ul> | Squaring a Sorted Array (easy)                     |      977 |      X      |
-|    4   | <ul><li>- [ ] </li></ul> | Triplet Sum to Zero (medium)                       |       15 |             |
-|    5   | <ul><li>- [ ] </li></ul> | Triplet Sum Close to Target (medium)               |       16 |             |
-|    6   | <ul><li>- [ ] </li></ul> | Triplets with Smaller Sum (medium)                 |      259 |             |
-|    7   | <ul><li>- [ ] </li></ul> | Subarrays with Product Less than a Target (medium) |      713 |             |
-|    8   | <ul><li>- [ ] </li></ul> | Dutch National Flag Problem (medium)               |       75 |             |
-|    9   | <ul><li>- [ ] </li></ul> | PC 1 - Quadruple Sum to Target                     |       18 |             |
-|   10   | <ul><li>- [ ] </li></ul> | PC 2 - Comparing Strings containing Backspaces     |      844 |             |
-|   11   | <ul><li>- [ ] </li></ul> | PC 3 - Minimum Window Sort                         |      581 |             |
+| Number |           Done           | Problem                                            |                                   Leetcode                                  | Written 10x |
+|:------:|:------------------------:|----------------------------------------------------|:---------------------------------------------------------------------------:|:-----------:|
+|    1   | <ul><li>- [x] </li></ul> | Pair with Target Sum (easy)                        |                 [1](https://leetcode.com/problems/two-sum/)                 |      X      |
+|    2   | <ul><li>- [ ] </li></ul> | Remove Duplicates (easy)                           |   [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  |             |
+|    3   | <ul><li>- [ ] </li></ul> | Squaring a Sorted Array (easy)                     |       [977](https://leetcode.com/problems/squares-of-a-sorted-array/)       |             |
+|    4   | <ul><li>- [ ] </li></ul> | Triplet Sum to Zero (medium)                       |                  [15](https://leetcode.com/problems/3sum/)                  |             |
+|    5   | <ul><li>- [ ] </li></ul> | Triplet Sum Close to Target (medium)               |              [16](https://leetcode.com/problems/3sum-closest/)              |             |
+|    6   | <ul><li>- [ ] </li></ul> | Triplets with Smaller Sum (medium)                 |              [259](https://leetcode.com/problems/3sum-smaller/)             |             |
+|    7   | <ul><li>- [ ] </li></ul> | Subarrays with Product Less than a Target (medium) |      [713](https://leetcode.com/problems/subarray-product-less-than-k/)     |             |
+|    8   | <ul><li>- [ ] </li></ul> | Dutch National Flag Problem (medium)               |               [75](https://leetcode.com/problems/sort-colors/)              |             |
+|    9   | <ul><li>- [ ] </li></ul> | PC 1 - Quadruple Sum to Target                     |                  [18](https://leetcode.com/problems/4sum/)                  |             |
+|   10   | <ul><li>- [ ] </li></ul> | PC 2 - Comparing Strings containing Backspaces     |        [844](https://leetcode.com/problems/backspace-string-compare/)       |             |
+|   11   | <ul><li>- [ ] </li></ul> | PC 3 - Minimum Window Sort                         | [581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) |             |
 
-### Pattern: Fast & Slow pointers (7) 
+---
+
+## Pattern: Fast & Slow pointers (7) 
 - [ ] LinkedList Cycle (easy): LC 141
       Done: 
 - [ ] Start of LinkedList Cycle (medium): LC 142
@@ -47,7 +51,7 @@ https://www.educative.io/courses/grokking-the-coding-interview
 - [ ] Problem Challenge 2: LC 143
 - [ ] Problem Challenge 3: LC 457
 
-### Pattern: Merge Intervals (7)
+## Pattern: Merge Intervals (7)
 
 - [ ] Merge Intervals (medium): LC 56
       Done: 
