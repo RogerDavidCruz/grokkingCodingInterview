@@ -1,6 +1,6 @@
 # Pattern: In-place Reversal of a LinkedList
 
-> Current will point to previous, before moving
+> Current node will point to previous, before moving <br>
 > Previous always point to previous node that have been processed
 
 ```javascript
