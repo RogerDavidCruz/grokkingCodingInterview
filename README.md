@@ -4,19 +4,19 @@ https://www.educative.io/courses/grokking-the-coding-interview
 
 ### Pattern: Sliding Window (11)
 
-| Number | Done |                        Problem                        | Leetcode | Written 10x |
-|:------:|:----:|:-----------------------------------------------------:|:--------:|:-----------:|
-|    1   |  [x] | Maximum Sum Subarray of Size K (easy)                 |    n/a   |      X      |
-|    2   |  [x] | Smallest Subarray with a given sum (easy)             |    209   |      X      |
-|    3   |  [x] | Longest Substring with K Distinct Characters (medium) |    340   |      X      |
-|    4   |  [ ] | Fruits into Baskets (medium)                          |    904   |             |
-|    5   |  [ ] |                                                       |     3    |             |
-|    6   |  [ ] |                                                       |    424   |             |
-|    7   |  [ ] |                                                       |   1004   |             |
-|    8   |  [ ] |                                                       |    567   |             |
-|    9   |  [ ] |                                                       |    438   |             |
-|   10   |  [ ] |                                                       |    76    |             |
-|   11   |  [ ] |                                                       |    30    |             |
+| Number |      Done      |                        Problem                        |                             Leetcode                            | Written 10x |
+|:------:|:--------------:|:-----------------------------------------------------:|:---------------------------------------------------------------:|:-----------:|
+|    1   | <li>- [x]</li> | Maximum Sum Subarray of Size K (easy)                 |                               n/a                               |      X      |
+|    2   |  <li>[x]</li>  | Smallest Subarray with a given sum (easy)             | [209](https://leetcode.com/problems/minimum-size-subarray-sum/) |      X      |
+|    3   |      - [x]     | Longest Substring with K Distinct Characters (medium) |                               340                               |      X      |
+|    4   | <li>- [ ]</li> | Fruits into Baskets (medium)                          |                               904                               |             |
+|    5   |  <li>[ ]</li>  |                                                       |                                3                                |             |
+|    6   |       [ ]      |                                                       |                               424                               |             |
+|    7   |       [ ]      |                                                       |                               1004                              |             |
+|    8   |       [ ]      |                                                       |                               567                               |             |
+|    9   |       [ ]      |                                                       |                               438                               |             |
+|   10   |       [ ]      |                                                       |                                76                               |             |
+|   11   |       [ ]      |                                                       |                                30                               |             |
 
 - [x] Maximum Sum Subarray of Size K (easy): new (​link​)
       Done: 
