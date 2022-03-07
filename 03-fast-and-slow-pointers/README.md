@@ -62,7 +62,7 @@ const hasCycle = (head) => {
 
 ---
 
-### Start of Linked List Cycle
+## Start of Linked List Cycle
 
 >Given the head of a singly linkedlist that contains a cycle, write a function to find the starting node of a the cycle.
 
@@ -108,7 +108,7 @@ const findCycleStart = (head) => {
 
 ---
 
-### Happy Number (medium): LC 202
+## Happy Number (medium): LC 202
 
 >Any number will be called a happy number if, after repeatedly replace it with a number equal
 to the sum of the square of all of its digits, leads us to the number '1'. All other (not happy)
