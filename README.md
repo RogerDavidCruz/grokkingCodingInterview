@@ -4,44 +4,35 @@ https://www.educative.io/courses/grokking-the-coding-interview
 
 ## Pattern: Sliding Window (11)
 
-| Number |           Done           | Problem                                                      |                                          Leetcode                                          | Written 10x |
-|:------:|:------------------------:|--------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:-----------:|
-|    1   | <ul><li>- [x] </li></ul> | Maximum Sum Subarray of Size K (easy)                        |                                             n/a                                            |      X      |
-|    2   | <ul><li>- [x] </li></ul> | Smallest Subarray with a given sum (easy)                    |               [209](https://leetcode.com/problems/minimum-size-subarray-sum/)              |      X      |
-|    3   | <ul><li>- [x] </li></ul> | Longest Substring with K Distinct Characters (medium)        | [340](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |      X      |
-|    4   | <ul><li>- [ ] </li></ul> | Fruits into Baskets (medium)                                 |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
-|    5   | <ul><li>- [ ] </li></ul> | No-repeat Substring (hard)                                   |     [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)     |             |
-|    6   | <ul><li>- [ ] </li></ul> | Longest Substring with Same Letters after Replacement (hard) |        [424](https://leetcode.com/problems/longest-repeating-character-replacement/)       |             |
-|    7   | <ul><li>- [ ] </li></ul> | Longest Subarray with Ones after Replacement (hard)          |               [1004](https://leetcode.com/problems/max-consecutive-ones-iii/)              |             |
-|    8   | <ul><li>- [ ] </li></ul> | PC 1 - Permutation of a string                               |                 [567](https://leetcode.com/problems/permutation-in-string/)                |             |
-|    9   | <ul><li>- [ ] </li></ul> | PC 2 - String Anagrams (hard)                                |             [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/)            |             |
-|   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)           |                [76](https://leetcode.com/problems/minimum-window-substring/)               |             |
-|   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring with concatenation                          |       [30](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)       |             |
+| Number |           Done           | Problem                                                       |                                          Leetcode                                          | Written 10x |
+|:------:|:------------------------:|---------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:-----------:|
+|    1   | <ul><li>- [x] </li></ul> | Maximum Sum Subarray of Size K (easy)                         |                                             n/a                                            |      X      |
+|    2   | <ul><li>- [x] </li></ul> | Smallest Subarray with a given sum (easy)                     |               [209](https://leetcode.com/problems/minimum-size-subarray-sum/)              |      X      |
+|    3   | <ul><li>- [x] </li></ul> | Longest Substring with maximum K Distinct Characters (medium) | [340](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |      X      |
+|    4   | <ul><li>- [ ] </li></ul> | Fruits into Baskets (medium)                                  |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
+|    5   | <ul><li>- [ ] </li></ul> | Longest Substring with Distinct Characters (hard)             |     [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)     |             |
+|    6   | <ul><li>- [ ] </li></ul> | Longest Substring with Same Letters after Replacement (hard)  |        [424](https://leetcode.com/problems/longest-repeating-character-replacement/)       |             |
+|    7   | <ul><li>- [ ] </li></ul> | Longest Subarray with Ones after Replacement (hard)           |               [1004](https://leetcode.com/problems/max-consecutive-ones-iii/)              |             |
+|    8   | <ul><li>- [ ] </li></ul> | PC 1 - Permutation of a string                                |                 [567](https://leetcode.com/problems/permutation-in-string/)                |             |
+|    9   | <ul><li>- [ ] </li></ul> | PC 2 - String Anagrams (hard)                                 |             [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/)            |             |
+|   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)            |                [76](https://leetcode.com/problems/minimum-window-substring/)               |             |
+|   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring with concatenation                           |       [30](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)       |             |
 
 ## Pattern: Two Pointers (11)
 
-- [ ] Pair with Target Sum (easy): LC1
-      Done: 
-- [ ] Remove Duplicates (easy): LC 26
-      Done: 
-- [ ] Squaring a Sorted Array (easy): LC 977
-      Done: 
-- [ ] Triplet Sum to Zero (medium): LC 15
-      Done: 
-- [ ] Triplet Sum Close to Target (medium): LC 16
-      Done: 
-- [ ] Triplets with Smaller Sum (medium): LC 259
-      Done: 
-- [ ] Subarrays with Product Less than a Target (medium): LC 713
-      Done: 
-- [ ] Dutch National Flag Problem (medium): LC 75
-      Done: 
-- [ ] Problem Challenge 1: LC 18
-      Done: 
-- [ ] Problem Challenge 2: LC 844
-      Done:
-- [ ] Problem Challenge 3: LC 581
-      Done:
+| Number |           Done           | Problem                                            | Leetcode | Written 10x |
+|:------:|:------------------------:|----------------------------------------------------|:--------:|:-----------:|
+|    1   | <ul><li>- [x] </li></ul> | Pair with Target Sum (easy)                        |        1 |      X      |
+|    2   | <ul><li>- [x] </li></ul> | Remove Duplicates (easy)                           |       26 |      X      |
+|    3   | <ul><li>- [x] </li></ul> | Squaring a Sorted Array (easy)                     |      977 |      X      |
+|    4   | <ul><li>- [ ] </li></ul> | Triplet Sum to Zero (medium)                       |       15 |             |
+|    5   | <ul><li>- [ ] </li></ul> | Triplet Sum Close to Target (medium)               |       16 |             |
+|    6   | <ul><li>- [ ] </li></ul> | Triplets with Smaller Sum (medium)                 |      259 |             |
+|    7   | <ul><li>- [ ] </li></ul> | Subarrays with Product Less than a Target (medium) |      713 |             |
+|    8   | <ul><li>- [ ] </li></ul> | Dutch National Flag Problem (medium)               |       75 |             |
+|    9   | <ul><li>- [ ] </li></ul> | PC 1 - Quadruple Sum to Target                     |       18 |             |
+|   10   | <ul><li>- [ ] </li></ul> | PC 2 - Comparing Strings containing Backspaces     |      844 |             |
+|   11   | <ul><li>- [ ] </li></ul> | PC 3 - Minimum Window Sort                         |      581 |             |
 
 ### Pattern: Fast & Slow pointers (7) 
 - [ ] LinkedList Cycle (easy): LC 141
