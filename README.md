@@ -10,20 +10,20 @@ https://www.educative.io/courses/grokking-the-coding-interview
 |    2   | <ul><li>- [x] </li></ul> | Smallest Subarray with a given sum (easy)                    |               [209](https://leetcode.com/problems/minimum-size-subarray-sum/)              |      X      |
 |    3   | <ul><li>- [x] </li></ul> | Longest Substring with K Distinct Characters (medium)        | [340](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |      X      |
 |    4   | <ul><li>- [ ] </li></ul> | Fruits into Baskets (medium)                                 |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
-|    5   |      <li>- [x] </li>     | No-repeat Substring (hard)                                   |                                              3                                             |             |
-|    6   |      <li>- [ ] </li>     | Longest Substring with Same Letters after Replacement (hard) |                                             424                                            |             |
-|    7   |      <li>- [x]</li>      | Longest Subarray with Ones after Replacement (hard)          |                                            1004                                            |             |
-|    8   |      <li>- [ ]</li>      | PC 1 - Permutation of a string                               |                                             567                                            |             |
-|    9   |                          | PC 2 - String Anagrams (hard)                                |                                             438                                            |             |
-|   10   |                          | PC 3 - Smallest Window containing Substring (hard)           |                                             76                                             |             |
-|   11   |                          | PC 4 - Substring w/concatenation                             |                                             30                                             |             |
+|    5   | <ul><li>- [ ] </li></ul> | No-repeat Substring (hard)                                   |     [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)     |             |
+|    6   | <ul><li>- [ ] </li></ul> | Longest Substring with Same Letters after Replacement (hard) |        [424](https://leetcode.com/problems/longest-repeating-character-replacement/)       |             |
+|    7   | <ul><li>- [ ] </li></ul> | Longest Subarray with Ones after Replacement (hard)          |                                            1004                                            |             |
+|    8   | <ul><li>- [ ] </li></ul> | PC 1 - Permutation of a string                               |                                             567                                            |             |
+|    9   | <ul><li>- [ ] </li></ul> | PC 2 - String Anagrams (hard)                                |                                             438                                            |             |
+|   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)           |                                             76                                             |             |
+|   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring w/concatenation                             |                                             30                                             |             |
 
 
-- [x] Maximum Sum Subarray of Size K (easy): new (​link​)
+- [x] 1. Maximum Sum Subarray of Size K (easy): new (​link​)
       Done: 
-- [x] Smallest Subarray with a given sum (easy): LC 209
+- [x] 2. Smallest Subarray with a given sum (easy): LC 209
       Done: 
-- [x] Longest Substring with K Distinct Characters (medium): LC 340
+- [x] 3. Longest Substring with K Distinct Characters (medium): LC 340
       Done: 
 - [ ] Fruits into Baskets (medium): LC 904
       Done:
