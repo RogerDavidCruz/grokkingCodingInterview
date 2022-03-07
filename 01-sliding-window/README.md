@@ -2,16 +2,17 @@
 
 ## Table of Contents
 
-- [ ] 1. [Maximum Sum Subarray of Size K (easy)](#maximum-sum-subarray-of-size-k-easy)
-- [ ] 2. [Smallest Subarray with a Greater Sum (easy)](#smallest-subarray-with-a-greater-sum-easy)
-- [ ] 3. [Longest Substring with K Distinct Characters (medium)](#longest-substring-with-k-distinct-characters-medium)
+- [x] 1. [Maximum Sum Subarray of Size K (easy)](#maximum-sum-subarray-of-size-k-easy)
+- [x] 2. [Smallest Subarray with a Greater Sum (easy)](#smallest-subarray-with-a-greater-sum-easy)
+- [x] 3. [Longest Substring with K Distinct Characters (medium)](#longest-substring-with-k-distinct-characters-medium)
 - [ ] 4. [Fruits into Baskets (medium)](#fruits-into-baskets-medium)
-- [ ] 5. [No-repeat Substring (hard)](#no-repeat-substring-hard)
+- [x] 5. [Longest Substring with distinct characters (hard)](#longest-substrings-with-distinct-characters-hard)
 - [ ] 6. [Longest Substring with Same Letters after Replacement (hard)](#longest-substring-with-same-letters-after-replacement-hard)
 - [ ] 7. [Longest Subarray with Ones after Replacement (hard)](#longest-subarray-with-ones-after-replacement-hard)
 - [ ] 8. [Permutation in a String (hard)](#permutation-in-a-string-hard)
 - [ ] 9. [String Anagrams (hard)](#string-anagrams-hard)
-
+- [ ] 10. [Smallest Window Containing Substring (hard)](#smallest-window-containing-substring)
+- [ ] 11. [Substring with Concatenation (hard)](#substring-with-concatenation)
 
 ## Maximum Sum Subarray of Size K (easy)
 
@@ -166,8 +167,56 @@ const longestSubstringWithKDistinct = (str, k) => {
 ```javascript
 ```
 
+> ### Time:
+> ### Space:
+
+---
+
+## Longest Substring with distinct characters (hard)
+
 >
+
+```
+```
+
+```javascript
+const longestSubString = string => {
+    let start = 0,
+        maxLength = 0,
+        charIdxMap = {};
+  
+    for (end = 0; end < string.length; end++) {
+        const rightChar = string[end];
+        if (rightChar in charIdxMap) {
+        windowStart = Math.max(windowStart, charIdxMap[right] + 1)
+        } 
+
+        charIdxMap[rightChar] = windowEnd;
+
+        maxLength = Math.max(maxLength, end - start + 1);  
+    }
+  
+    return maxLength;
+}
+```
+
+> ### Time:
+> ### Space:
+
+---
+
+## Longest Substring with Same Letters after Replacement (hard)
+
 >
+
+```
+```
+
+```javascript
+```
+
+> ### Time:
+> ### Space:
 
 ---
 

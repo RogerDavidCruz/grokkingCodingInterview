@@ -1,12 +1,15 @@
+/*
+Longest Substring With Distinct Characters
+*/
 
+/*
+grokking - the index were the last char last appeared
+{'char' : idex where end pointer char last scene } [updated in each iteration]
 
-
-
-//grokking - the index were the last char last appeared
-
-// {'char' : idex where end pointer char last scene } u[dated in each iteration]
-
-
+       s
+ "abcdeafjyk"
+             e
+*/
 
 const longestSubString = string => {
     let start = 0,
@@ -26,10 +29,7 @@ const longestSubString = string => {
   
     return maxLength;
   }
-  //       s
-  // "abcdeafjyk"
-  //             e
   
-  console.log(longestSubString("aabccbb")) //3
-  console.log(longestSubString("abbbb")) //2
-  console.log(longestSubString("abcdeafjyk")) //9
+console.log(longestSubString("aabccbb")) //3
+console.log(longestSubString("abbbb")) //2
+console.log(longestSubString("abcdeafjyk")) //9

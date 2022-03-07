@@ -36,9 +36,10 @@ const maxSumSizeK = (arr, k) => {
     for (end = 0; end < arr.length; end++) {
         sum += arr[end];
 
+        // slide the window if window gets bigger than or equal to the k limit
         if (end + 1 >= k) { // or end >= k - 1
             maxSum = Math.max(maxSum, sum);
-            sum -= arr[start];
+            sum -= arr[start]; // Remove traces of windowStart as you slide the window forward
             start++
         }
     }
