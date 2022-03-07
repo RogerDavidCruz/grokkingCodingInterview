@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-1. [Maximum Sum Subarray of Size K (easy)](#maximum-sum-subarray-of-size-k-easy)
-2. [Smallest Subarray with a Greater Sum (easy)](#smallest-subarray-with-a-greater-sum-easy)
-3. [Longest Substring with K Distinct Characters (medium)](#longest-substring-with-k-distinct-characters-medium)
-4. [Fruits into Baskets](#fruits-into-baskets)
-5. [No-repeat Substring (hard)](#no-repeat-substring-hard)
-6. [Longest Substring with Same Letters after Replacement (hard)](#longest-substring-with-same-letters-after-replacement-hard)
-7. [Longest Subarray with Ones after Replacement (hard)](#longest-subarray-with-ones-after-replacement-hard)
-8. [Permutation in a String (hard)](#permutation-in-a-string-hard)
-9. [String Anagrams (hard)](#string-anagrams-hard)
+- [ ] 1. [Maximum Sum Subarray of Size K (easy)](#maximum-sum-subarray-of-size-k-easy)
+- [ ] 2. [Smallest Subarray with a Greater Sum (easy)](#smallest-subarray-with-a-greater-sum-easy)
+- [ ] 3. [Longest Substring with K Distinct Characters (medium)](#longest-substring-with-k-distinct-characters-medium)
+- [ ] 4. [Fruits into Baskets (medium)](#fruits-into-baskets-medium)
+- [ ] 5. [No-repeat Substring (hard)](#no-repeat-substring-hard)
+- [ ] 6. [Longest Substring with Same Letters after Replacement (hard)](#longest-substring-with-same-letters-after-replacement-hard)
+- [ ] 7. [Longest Subarray with Ones after Replacement (hard)](#longest-subarray-with-ones-after-replacement-hard)
+- [ ] 8. [Permutation in a String (hard)](#permutation-in-a-string-hard)
+- [ ] 9. [String Anagrams (hard)](#string-anagrams-hard)
 
 
 ## Maximum Sum Subarray of Size K (easy)
@@ -156,7 +156,7 @@ const longestSubstringWithKDistinct = (str, k) => {
 
 ---
 
-## Fruits into Baskets
+## Fruits into Baskets (medium)
 
 >
 
