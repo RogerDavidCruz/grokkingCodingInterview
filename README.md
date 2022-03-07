@@ -2,7 +2,7 @@
 
 https://www.educative.io/courses/grokking-the-coding-interview
 
-### Pattern: Sliding Window (11)
+## Pattern: Sliding Window (11)
 
 | Number |           Done           | Problem                                                      |                                          Leetcode                                          | Written 10x |
 |:------:|:------------------------:|--------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:-----------:|
@@ -12,36 +12,13 @@ https://www.educative.io/courses/grokking-the-coding-interview
 |    4   | <ul><li>- [ ] </li></ul> | Fruits into Baskets (medium)                                 |                  [904](https://leetcode.com/problems/fruit-into-baskets/)                  |             |
 |    5   | <ul><li>- [ ] </li></ul> | No-repeat Substring (hard)                                   |     [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)     |             |
 |    6   | <ul><li>- [ ] </li></ul> | Longest Substring with Same Letters after Replacement (hard) |        [424](https://leetcode.com/problems/longest-repeating-character-replacement/)       |             |
-|    7   | <ul><li>- [ ] </li></ul> | Longest Subarray with Ones after Replacement (hard)          |                                            1004                                            |             |
-|    8   | <ul><li>- [ ] </li></ul> | PC 1 - Permutation of a string                               |                                             567                                            |             |
-|    9   | <ul><li>- [ ] </li></ul> | PC 2 - String Anagrams (hard)                                |                                             438                                            |             |
-|   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)           |                                             76                                             |             |
-|   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring w/concatenation                             |                                             30                                             |             |
+|    7   | <ul><li>- [ ] </li></ul> | Longest Subarray with Ones after Replacement (hard)          |               [1004](https://leetcode.com/problems/max-consecutive-ones-iii/)              |             |
+|    8   | <ul><li>- [ ] </li></ul> | PC 1 - Permutation of a string                               |                 [567](https://leetcode.com/problems/permutation-in-string/)                |             |
+|    9   | <ul><li>- [ ] </li></ul> | PC 2 - String Anagrams (hard)                                |             [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/)            |             |
+|   10   | <ul><li>- [ ] </li></ul> | PC 3 - Smallest Window containing Substring (hard)           |                [76](https://leetcode.com/problems/minimum-window-substring/)               |             |
+|   11   | <ul><li>- [ ] </li></ul> | PC 4 - Substring with concatenation                          |       [30](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)       |             |
 
-
-- [x] 1. Maximum Sum Subarray of Size K (easy): new (​link​)
-      Done: 
-- [x] 2. Smallest Subarray with a given sum (easy): LC 209
-      Done: 
-- [x] 3. Longest Substring with K Distinct Characters (medium): LC 340
-      Done: 
-- [ ] Fruits into Baskets (medium): LC 904
-      Done:
-- [ ] No-repeat Substring (hard): LC 3
-      Done: 
-- [ ] Longest Substring with Same Letters after Replacement (hard)
-      Done:
-- [ ] LC 424 Longest Subarray with Ones after Replacement (hard)
-      Done: 
-- [ ] LC 1004 Problem Challenge 1: LC 567
-      Done: 
-- [ ] Problem Challenge 2: LC 438
-      Done: 
-- [ ] Problem Challenge 3: LC 76
-      Done:
-- [ ] Problem Challenge 4: LC 30
-      Done:
-### Pattern: Two Pointers (11)
+## Pattern: Two Pointers (11)
 
 - [ ] Pair with Target Sum (easy): LC1
       Done: 
