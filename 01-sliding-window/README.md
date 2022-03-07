@@ -86,10 +86,6 @@ const smallestLenSum = (arr, s) => {
     }
     return minLen === Infinity ? 0 : minLen;
 }
-
-console.log(smallestLenSum([2,1,5,2,3,2], 7)) //2
-console.log(smallestLenSum([2,1,5,2,8], 7)) //1
-console.log(smallestLenSum([3,4,1,1,6], 8)) //3
 ```
 > ### Time: O(N) two loops O(n + n) but asymptotically O(n)
 > ### Space: O(1)
@@ -219,4 +215,5 @@ const longestSubString = string => {
 > ### Space:
 
 ---
+
 
