@@ -19,12 +19,12 @@ function max_sub_array_of_size_k(k, arr) {
 }
 ```
 
-### Maximum Sum Subarray of Size K
+## Maximum Sum Subarray of Size K
 
-```
-Given an array of positive numbers and a positive number ‘k’,
+>Given an array of positive numbers and a positive number ‘k’,
 find the maximum sum of any contiguous subarray of size ‘k’.
 
+```
 Example 1:
     Input: [2, 1, 5, 1, 3, 2], k=3
     Output: 9
@@ -34,9 +34,6 @@ Example 2:
     Input: [2, 3, 4, 1, 5], k=2
     Output: 7
     Explanation: Subarray with maximum sum is [3, 4].
-
-Time: O(N)
-Space: O(1)
 ```
 
 ```javascript
@@ -60,14 +57,16 @@ function max_sub_array_of_size_k(k, arr) {
 console.log(max_sub_array_of_size_k(3, [2, 1, 5, 1, 3, 2])); // 9
 console.log(max_sub_array_of_size_k(2, [2, 3, 4, 1, 5])); // 7
 ```
+> ### Time: O(N)
+> ### Space: O(1)
 
-### Smallest Subarray Greater 
+## Smallest Subarray with a Greater Sum
 
-```
-Given an array of positive numbers and a positive number 'S,' find the length of the
+>Given an array of positive numbers and a positive number 'S,' find the length of the
 smallest contigous subarray whose sum is greater than or equal to 'S'. Return 0 if no 
 such subarray exists.
 
+```
 Example 1:
     Input: [2,1,5,2,3,2], S = 7
     Output: 2
@@ -77,9 +76,6 @@ Example 2:
     Input: [2, 1, 5, 2, 8], S=7 
     Output: 1
     Explanation: The smallest subarray with a sum greater than or equal to '7' is [8].
-
-Time: O(n) two loops O(n + n) but asymptotically O(n)
-Space: O(1)
 ```
 
 ```javascript
@@ -102,13 +98,15 @@ console.log(smallestLenSum([2,1,5,2,3,2], 7)) //2
 console.log(smallestLenSum([2,1,5,2,8], 7)) //1
 console.log(smallestLenSum([3,4,1,1,6], 8)) //3
 ```
+> ### Time: O(N) two loops O(n + n) but asymptotically O(n)
+> ### Space: O(1)
 
-### Longest Substring With Maximum K Distinct Characters
+## Longest Substring With Maximum K Distinct Characters
 
-```
-Given a string, find the length of the longest substring in it with no more than 
+>Given a string, find the length of the longest substring in it with no more than 
 K distinct characters.
 
+```
 Example 1:
     Input: String="araaci", K=2
     Output: 4
@@ -128,9 +126,6 @@ Example 4:
     Input: String="cbbebi", K=10
     Output: 6
     Explanation: The longest substring with no more than '10' distinct characters is "cbbebi".
-
-Time: O(n)
-Space: O(m) 
 ```
 
 ```javascript
@@ -167,8 +162,10 @@ const longestSubstringWithKDistinct = (str, k) => {
   console.log(longestSubstringWithKDistinct("cbbebi", 3)) // 5
   console.log(longestSubstringWithKDistinct("cbbebi", 10)) // 6
 ```
+> ### Time: O(N)
+> ### Space: O(M) 
 
-### Fruits Into Baskets
+## Fruits Into Baskets
 
 ```
 ```
@@ -176,12 +173,12 @@ const longestSubstringWithKDistinct = (str, k) => {
 ```javascript
 ```
 
-### Longest Substring With Distinct Characters
+## Longest Substring With Distinct Characters
 
-```
-Given a string, find the length of the longest substring, 
+>Given a string, find the length of the longest substring, 
 which has all distinct characters.
 
+```
 Example 1:
     Input: String="aabccbb"
     Output: 3
@@ -191,9 +188,6 @@ Example 2:
     Input: String="abbbb"
     Output: 2
     Explanation: The longest substring with distinct characters is "ab".
-
-Time: O(N)
-Space: O(1) since there is a set 26 distinct english letters to fit in the hashmap
 ```
 
 ```javascript
@@ -220,18 +214,21 @@ const longestSubString = string => {
   console.log(longestSubString("abbbb")) //2
   console.log(longestSubString("abcdeafjyk")) //9
 ```
+> ### Time: O(N)
+> ### Space: O(K) / O(1) since there is a set 26 distinct english letters to fit in the hashmap
+
+---
 
 # Pattern: Two Pointers
 
-### Pair With Target Sum
-```
-Given an array of sorted numbers and a target sum, find a pair in the array whose sum is 
-equal to the given target. 
+## Pair With Target Sum
 
-Write a function to return the indices of the two numbers (i.e. the pair) such that they add
+>Given an array of sorted numbers and a target sum, find a pair in the array whose sum is 
+equal to the given target. 
+>Write a function to return the indices of the two numbers (i.e. the pair) such that they add
 up to the given target.
 
-
+```
 Example 1:
     Input: [1,2,3,4,6], target = 6
     Output: [1,3]
@@ -241,9 +238,6 @@ Example 2:
     Input: [2,5,9,11], target = 11
     Output: [0,2]
     Explnation: The numbers at index 0 and 2 add up to 11: 2+9 = 11
-
-Time: O(N)
-Space: O(1)
 ```
 
 ```javascript
@@ -268,6 +262,10 @@ const pairTargetSum = (nums, target) => {
 console.log(pairTargetSum([1,2,3,4,6], 6)) //[1,3]
 console.log(pairTargetSum([2,5,9,11], 11)) //[0,2]
 ```
+> ### Time: O(N)
+> ### Space: O(1)
+
+---
 
 # Pattern: Fast and Slow Pointers
 
@@ -291,21 +289,18 @@ head.next.next.next.next = new Node(5);
 head.next.next.next.next.next = new Node(6);
 ```
 
-### Linked List Cycle
+## Linked List Cycle
 
-```
-Give the head of a singly linked list, write a function to determine if the 
+>Give the head of a singly linked list, write a function to determine if the 
 LinkedList has a cycle in it or not.
 
+```
 Example 1:  LinkedList with cycle
             head -> 1 - 2 - 3 - 4 - 5 - 6 --|
                         ^|__________________|
 
 Example 2:  LinkedList without cycle
             head - 2 - 4 - 6 - 8 - 10 - null
-
-Time: O(N) all nodes of LL
-Space: O(1)
 ```
 
 ```javascript
@@ -324,13 +319,15 @@ const hasCycle = head => {
     return false;
 }
 ```
+> ### Time: O(N) all nodes of LL
+> ### Space: O(1)
 
-### Start of Linked List Cycle
+## Start of Linked List Cycle
 
-```
-Given the head of a singly linkedlist that contains a cycle, write a function
+>Given the head of a singly linkedlist that contains a cycle, write a function
 to find the starting node of a the cycle.
 
+```
                     cycle start
 Example 1:               v
             head -> 2 -> 3 -> 4 -> 5 -> 6--|
@@ -368,6 +365,8 @@ const findCycleStart = head => {
 }
 ```
 
+---
+
 # Pattern: Merge Intervals
 
 ```
@@ -390,9 +389,6 @@ Example 2:
     Output: [[2,4], [5,9]]
     Explanation: Since the intervals [6,7] and [5,9] overlap, 
                  we merged them into one [5,9].
-
-Time: O(N * logN)
-Space: O(N)
 ```
 
 ```javascript
@@ -428,3 +424,5 @@ const mergeIntervals = intervals => {
   
   console.log(mergeIntervals([[1,4], [2,5], [7,9]])) //[[1,5], [7,9]]
 ```
+> ### Time: O(N * logN)
+> ### Space: O(N)
