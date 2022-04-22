@@ -77,3 +77,40 @@ const tripletSmallerSum = (nums, target) => {
   
   console.log(tripletSmallerSum([-1, 0, 2, 3], 3 )) //2
   console.log(tripletSmallerSum([-1, 4, 2, 1, 3], 5 )) //4
+
+
+  //LEETCODE VERSION
+  /**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+const threeSumSmaller = (nums, target) => {
+  nums.sort((a,b) => a - b);
+  let count= 0;
+
+  for (let i = 0; i < nums.length - 2; i++) {
+    let left = i + 1;
+    let right = nums.length - 1;
+
+    while (left < right) {
+      const currentSum = nums[i] + nums[left] + nums[right];
+      if (currentSum < target) {
+        count += right - left;
+        left++;
+      } else {
+        right--;
+      }
+    }
+  }
+  return count;
+};
+
+//Extra Notes:
+
+      //INSIDE while loop as left < right
+        //check if element at i, element at left, element at right pointer
+        //added up are less than target
+        //if they are, increase the count by subtracting right and left pointers <-- WHY?
+        //move up the left pointer, to check another larger value
+        //else move the right pointer down, since the 3sum was larger or equal than target
