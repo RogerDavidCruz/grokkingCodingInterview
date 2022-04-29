@@ -33,6 +33,13 @@ function hasPath (root, sum) {
     return hasPath(root.left, sum - root.value) || hasPath(root.right, sum - root.value);
 }
 
+//Abridge Version
+
+const hasPathDFS = (root, sum) => {
+    if (!root) return false;
+    if (root.val === sum && !root.left && !root.right) return true;
+    return hasPathDFS(root.left, sum - root.val) || hasPathDFS(root.right, sum - root.val);
+}
 
 class TreeNode {
     constructor (value) {
