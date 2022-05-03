@@ -10,14 +10,16 @@ Example 1:
     Output: Following are the two valid topological sorts for the given graph
             1) 3,2,0,1
             2) 3,2,1,0
+*/
+
+/*
+Algorithm (inline comments)
 
 Time: O(V + E) each vertex become source only once, each edge access/removed only once
 Space: O(V + E) since storing all edges for each vertex in adjancency list
 */
 
 const topologicalSort = (vertices, edges) => {
-    console.log(edges, 'edges')
-
     const sortedOrder = []
     if (vertices <= 0) return sortedOrder;
 
@@ -30,16 +32,9 @@ const topologicalSort = (vertices, edges) => {
         let parent = edge[0],
             child = edge[1];
 
-            console.log(child, 'child')
-
         graph[parent].push(child);
         inDegree[child]++;
-
-        console.log(inDegree, 'inDegree - count of incoming edges')
     });
-
-    //console.log(graph, 'graph')
-    //console.log(inDegree, 'inDegree')
 
     // find all sources i.e. , all vertices with 0 in degrees
     const sources = [];
@@ -62,9 +57,7 @@ const topologicalSort = (vertices, edges) => {
     };
     
     // topological not possible if graph has a cycle
-
     if (sortedOrder.length !== vertices) return []
-
     return sortedOrder;
 }
 
