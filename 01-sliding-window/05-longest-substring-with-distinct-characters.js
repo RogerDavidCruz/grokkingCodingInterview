@@ -1,5 +1,6 @@
 /*
 Longest Substring With Distinct Characters
+(aka Longest substring without repeating characters)
 
 Given a string, find the length of the longest substring, which has all distinct characters.
 
@@ -20,15 +21,17 @@ Example 3:
 */
 
 /*
+Algorithm
+
 grokking - the index were the last char last appeared
-{'char' : idex where end pointer char last scene } [updated in each iteration]
+{'char' : index where end pointer char last seen } [then updated in each iteration]
 
        s
  "abcdeafjyk"
           e
 
-Time: O(N)             
-Space: O(1)
+Time: O(n) where n is all characters             
+Space: O(m) where m is size of the hashmap
 */
 
 const longestSubString = str => {
