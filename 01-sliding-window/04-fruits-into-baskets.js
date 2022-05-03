@@ -28,6 +28,21 @@ Example 2:
     This can be done if we start with the second letter: ['B', 'C', 'B', 'B', 'C']
 */
 
+/*
+Algorithm
+
+Sliding Window Technique
+- create a frequency map
+- outer for loop iterates array of fruits and builds frequency map
+- inner while loop slides window if map length > 2 (two distinct fruits only)
+- pop off map and move start pointer and delete from map when 0 fruits
+- update Max Fruits in Basket, outside inner loop but within outer loop
+- return max
+
+Time: O(n) where n is number of elements in fruits array
+Space: O(1) no extra space required
+*/
+
 const fruitsIntoBaskets = function(fruits) {
     let fruitFreqMap = {},
         start = 0, 
