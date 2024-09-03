@@ -48,8 +48,8 @@ const maxSumSizeK = (arr, k) => {
     return maxSum;
 }
 ```
->### **Time Complexity: O(N)**
->### **Space Complexity: O(1)**
+>### Time Complexity: O(N)
+>### Space Complexity: O(1)
 
 ---
 
